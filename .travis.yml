@@ -6,6 +6,10 @@ python:
 before_script:
   - source .env
 
-script:
-  - python hello.py
-  - pytest tests/
+run:
+  script:
+    - python hello.py
+
+test:
+  script:
+    - pytest tests/
