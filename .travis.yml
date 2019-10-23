@@ -6,10 +6,14 @@ python:
 before_script:
   - source .env
 
-run_job:
-  script:
-    - python hello.py
+script:
+  -pytest tests/
 
-test_job:
-  script:
-    - pytest tests/
+# this only works on gitlab-ci
+#run_job:
+#  script:
+#    - python hello.py
+#
+#test_job:
+#  script:
+#    - pytest tests/
