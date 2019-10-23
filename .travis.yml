@@ -7,7 +7,7 @@ before_script:
   - source .env
 
 script:
-  -pytest tests/
+  - pytest tests/
 
 # this only works on gitlab-ci
 #run_job:
